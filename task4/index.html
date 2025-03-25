@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        a {
+            margin: 10px;
+            color: azure;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        .menu {
+            display: flex;
+            list-style: none;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .menu li {
+            position: relative; 
+            padding: 10px;
+        }
+
+        ul li ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: blueviolet;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 150px;
+            opacity: 0; /* Make submenu invisible */
+            visibility: hidden; /* Prevent interactions */
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        }
+
+        /* Submenu items */
+        ul li ul li {
+            padding: 10px;
+            white-space: nowrap;
+        }
+
+        /* Hover effect to show submenu */
+        ul li:hover ul {
+            opacity: 1;
+            visibility: visible;
+        }
+        /* Add hover effect for better user experience */
+        ul li:hover > a {
+            background-color: darkblue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="">Civil</a></li>
+            <li>
+                <a href="">AI</a>
+                <ul>
+                    <li><a href="">AIDS</a></li>
+                    <li><a href="">AIML</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">CS</a>
+                <ul>
+                    <li><a href="">CSE</a></li>
+                    <li><a href="">CSD</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div>
+        <h1>What is Task 4</h1>
+        <h3>CSS Dropdown Menu</h3>
+    </div>
+
+</body>
+</html>
