@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <style>
+            body
+            {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .accordion
+            {
+                width: 50%;
+                height: 50%;
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 100px;
+                background-color: rgba(0,0,0,0.6);
+                /* opacity: 0.6; */
+                border: 2px solid black;
+                border-radius: 10px;
+            }
+            input[type="checkbox"]
+            {
+                display: none;
+            }
+            .content
+            {
+                max-height: 0;
+                overflow: hidden;
+                padding: 5px;
+                transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+            }
+            input[type="checkbox"]:checked + label + .content
+            {
+                max-height: 200px;
+                border: 1px solid black;
+                border-radius: 10px;
+                background-color:aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="accordion">
+            <input type="checkbox" name="check1" id="check1">
+            <label for="check1">Section 1</label>
+            <div class="content">
+                <p>Hey Section1</p>
+            </div>
+            
+            <input type="checkbox" name="check2" id="check2">
+            <label for="check2">Section 2</label>
+            <div class="content">
+                <p>Hey Section2</p>
+            </div>
+        </div>
+    </body>
+</html>
