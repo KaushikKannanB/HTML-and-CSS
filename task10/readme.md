@@ -71,6 +71,3 @@
 
 ---
 
-## Conclusion
-This project successfully demonstrates the use of `position: sticky;`, `position: fixed;`, and `:target` navigation. By understanding the above conditions, you can effectively implement similar layouts in future web projects.
-
