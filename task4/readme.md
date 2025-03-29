@@ -78,4 +78,5 @@ ul li:hover ul {
 - `opacity: 1; visibility: visible;` → Makes the submenu visible when hovered.
 
 ---
+![image](https://github.com/user-attachments/assets/5668b69a-eafc-4348-8dce-c354434393cd)
 
